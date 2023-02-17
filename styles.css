@@ -1,0 +1,43 @@
+body{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* margin-top: 8%; */
+}
+.box{
+    background-color: black;
+    border-radius: 20px;
+    column-gap: 70px;
+    padding: 30px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.box h2{
+    border-bottom: 2px solid white;
+}
+.operators{
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    border-left: 2px solid white;
+    color: white;
+}
+.box a{
+    text-decoration: none;
+    /* color: white; */
+    text-align: center;
+    padding: 5px;
+    font-weight: bolder;
+}
+.active, .box a:hover{
+    background-color: white;
+    color: black;
+    font-weight: bolder;
+}
