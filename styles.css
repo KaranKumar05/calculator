@@ -50,3 +50,8 @@ body{
     background-color: white;
     color: black;
 }
+@media(max-width:470px){
+    .box{
+        display: block;
+    }
+}
