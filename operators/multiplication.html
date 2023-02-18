@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-      <h1>Calculator multi</h1>
+      <h1>Calculator</h1>
       <div class="box">
         <h2>Operators</h2>
         <div class="operators">
@@ -17,10 +17,27 @@
           <a href="addition.html">Addition(+)</a>
           <a href="subtraction.html">Subtraction(-)</a>
           <a href="division.html">Division(/)</a>
-          <a href="#">Multiplication(*)</a>
+          <a class="active" href="multiplication.html">Multiplication(*)</a>
           <a href="Even&Odd.html">EVEN or ODD</a>
+          <a href="allInOne.html">All in One</a>
+
         </div>
       </div>
     </div>
+
+    <script type="module">
+      
+      let num1 = prompt("Enter First Number: ");
+      let num2 = prompt("Enter Second Number: ");
+
+      num1 = Number(num1);
+      num2 = Number(num2);
+
+      let multi = num1 * num2;
+
+      alert(num1 + " * "+ num2 + " = " + multi);
+
+    </script>
+
   </body>
 </html>

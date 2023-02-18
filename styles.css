@@ -1,14 +1,18 @@
 body{
-    display: flex;
-    justify-content: center;
-    /* align-items: center; */
+    font-family: 'Anton', sans-serif;
 }
 .container{
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
     align-items: center;
-    /* margin-top: 8%; */
+    justify-content: center;
+    height: 90vh;
+}
+.home{
+    font-family: serif;
+}
+.container>h1{
+    border-bottom: 2px solid black;
 }
 .box{
     background-color: black;
@@ -36,8 +40,13 @@ body{
     padding: 5px;
     font-weight: bolder;
 }
-.active, .box a:hover{
+.box a:hover{
     background-color: white;
     color: black;
     font-weight: bolder;
+}
+.active{
+    font-size: 30px;
+    background-color: white;
+    color: black;
 }

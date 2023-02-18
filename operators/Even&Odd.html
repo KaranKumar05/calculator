@@ -9,7 +9,7 @@
   </head>
   <body>
     <div class="container">
-      <h1>Calculator EO</h1>
+      <h1>Calculator</h1>
       <div class="box">
         <h2>Operators</h2>
         <div class="operators">
@@ -18,9 +18,25 @@
           <a href="subtraction.html">Subtraction(-)</a>
           <a href="division.html">Division(/)</a>
           <a href="multiplication.html">Multiplication(*)</a>
-          <a href="#">EVEN or ODD</a>
+          <a class="active" href="./Even&Odd.html">EVEN or ODD</a>
+          <a href="allInOne.html">All in One</a>
+
         </div>
       </div>
     </div>
+
+    <script type="module">
+      
+      let evenOdd = prompt("Enter Number to Cheak: ");
+
+      if (evenOdd%2==0){
+        alert(evenOdd + " is an Even Number");
+      }
+      else{
+        alert(evenOdd + " is an Odd Number");
+      }
+
+    </script>
+
   </body>
 </html>
