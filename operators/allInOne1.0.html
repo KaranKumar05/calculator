@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Calculator</h1>
+      <div class="box">
+        <h2>Operators</h2>
+        <div class="operators">
+          <a href="../index.html">Home</a>
+          <a href="addition.html">Addition(+)</a>
+          <a href="subtraction.html">Subtraction(-)</a>
+          <a href="division.html">Division(/)</a>
+          <a href="multiplication.html">Multiplication(*)</a>
+          <a href="Even&Odd.html">EVEN or ODD</a>
+          <a class="active" href="allInOne.html">All in One</a>
+          <a class="active" href="allInOne1.0.html">All in One 1.0</a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      function add(num1, num2) {
+        return num1 + num2;
+      }
+      function subtract(num1, num2) {
+        return num1 - num2;
+      }
+      function multiply(num1, num2) {
+        return num1 * num2;
+      }
+      function divide(num1, num2) {
+        if (num2 == 0) {
+          return "Infinity";
+        } else {
+          return num1 / num2;
+        }
+      }
+      function isEvenOrOdd(num) {
+        if (num % 2 == 0) {
+          return "even";
+        } else {
+          return "odd";
+        }
+      }
+      let num1 = parseFloat(prompt("Enter first number:"));
+      let num2 = parseFloat(prompt("Enter second number:"));
+
+      let operation = prompt("Chose the Operator (EvenOdd) & (+, -, x, /): ");
+      if (operation == "+") {
+        alert("Sum: " + add(num1, num2));
+      } else if (operation =="-") {
+        alert("Difference: " + subtract(num1, num2));
+      } else if ((operation == "x")) {
+        alert("Product: " + multiply(num1, num2));
+      } else if ((operation == "/")) {
+        alert("Quotient: " + divide(num1, num2));
+      } else if ((operation == "EvenOdd")) {
+        alert("First number " + num1 +" is an " + isEvenOrOdd(num1)+ " Number");
+        alert("Second number " + num2 +" is an " + isEvenOrOdd(num2)+ " Number");
+      } else {
+        prompt("Pleaase Chose The correct Operator");
+      }
+    </script>
+  </body>
+</html>

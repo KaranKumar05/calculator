@@ -1,33 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles.css">
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="../styles.css">
+</head>
+
+<body>
+
   <body>
-    <body>
-        <div class="container">
-          <h1>Calculator</h1>
-          <div class="box">
-            <h2>Operators</h2>
-            <div class="operators">
-              <a href="../index.html">Home</a>
-              <a href="addition.html">Addition(+)</a>
-              <a href="subtraction.html">Subtraction(-)</a>
-              <a href="division.html">Division(/)</a>
-              <a href="multiplication.html">Multiplication(*)</a>
-              <a href="Even&Odd.html">EVEN or ODD</a>
-              <a class="active" href="allInOne.html">All in One</a>
-    
-            </div>
-          </div>
+    <div class="container">
+      <h1>Calculator</h1>
+      <div class="box">
+        <h2>Operators</h2>
+        <div class="operators">
+          <a href="../index.html">Home</a>
+          <a href="addition.html">Addition(+)</a>
+          <a href="subtraction.html">Subtraction(-)</a>
+          <a href="division.html">Division(/)</a>
+          <a href="multiplication.html">Multiplication(*)</a>
+          <a href="Even&Odd.html">EVEN or ODD</a>
+          <a class="active" href="allInOne.html">All in One</a>
+          <a href="allInOne1.0.html">All in One 1.0</a>
         </div>
+      </div>
+    </div>
 
     <script type="module">
-      let operation = prompt("Enter Function (EnenOdd) & (Add, Sub, Multi, Div) : ");
+      let operation = prompt("Enter Function (EvenOdd) & (+, -, x, /) : ");
+
 
       if (operation == "EvenOdd") {
         let evenOdd = prompt("Enter Number to Cheak: ");
@@ -37,8 +41,9 @@
         } else {
           alert(evenOdd + " is an Odd Number");
         }
-      } 
-      else if (operation == "Add") {
+      }
+
+      else if (operation == "+") {
         let num1 = prompt("Enter First Number: ");
         let num2 = prompt("Enter Second Number: ");
 
@@ -48,8 +53,8 @@
         let add = num1 + num2;
 
         alert(num1 + " + " + num2 + " = " + add);
-      } 
-      else if (operation == "Sub") {
+      }
+      else if (operation == "-") {
         let num1 = prompt("Enter First Number: ");
         let num2 = prompt("Enter Second Number: ");
 
@@ -59,8 +64,8 @@
         let sub = num1 - num2;
 
         alert(num1 + " - " + num2 + " = " + sub);
-      } 
-      else if (operation == "Multi") {
+      }
+      else if (operation == "x") {
         let num1 = prompt("Enter First Number: ");
         let num2 = prompt("Enter Second Number: ");
 
@@ -69,9 +74,9 @@
 
         let multi = num1 * num2;
 
-        alert(num1 + " * " + num2 + " = " + multi);
-      } 
-      else if (operation == "Div") {
+        alert(num1 + " x " + num2 + " = " + multi);
+      }
+      else if (operation == "/") {
         let num1 = prompt("Enter First Number: ");
         let num2 = prompt("Enter Second Number: ");
 
@@ -82,9 +87,11 @@
 
         alert(num1 + " / " + num2 + " = " + div);
       }
-      else{
+      else {
         alert("Please chose the correct operator")
       }
+
     </script>
   </body>
+
 </html>
